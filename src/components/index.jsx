@@ -1,0 +1,10 @@
+export { default as Logo } from './Logo';
+export { default as Location } from './Location';
+export { default as Pagination } from './Pagination';
+export { default as Textarea } from './Textarea';
+export { default as Tab } from './Tab';
+export { default as Card2 } from './Card2';
+export { default as Card3 } from './Card3';
+export { default as Card4 } from './Card4';
+export { default as Card5 } from './Card5';
+export { default as Card6 } from './Card6';

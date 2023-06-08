@@ -1,0 +1,33 @@
+// image url
+$imgurl: "@/assets/images/";
+
+body {
+  color: var(--black);
+}
+
+// responsive
+@media (max-width: 1200px) {
+  html {
+    font-size: 0.95px
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 0.9px
+  }
+}
+@media (min-width: 1201px) {
+  html {
+    font-size: 1px
+  }
+}
+
+// contents
+.contentWidth {
+  width: var(--content-width);
+}
+
+:root {
+  --radius: 3rem;
+  --content-width: 1400rem;
+}

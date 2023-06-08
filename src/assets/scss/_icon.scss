@@ -1,0 +1,72 @@
+$iconsList: 
+  //개별 크기
+  "home",
+  "right",
+  "left",
+  "first-page",
+  "last-page",
+  "arrow-down",
+
+  //20x20
+  "right-arrow",
+  "left-arrow",
+  "right-thin",
+  "left-thin",
+  "check",
+  "filter",
+  "heart-outline",
+  "heart",
+  "magnifier",
+  "pencil",
+  "person",
+  "menu",
+  "notification",
+  "x",
+  "circle",
+  "circle-outline",
+  "play",
+  "pause",
+  "plus",
+;
+
+.i-logo {
+  @include mask("Logo.svg");
+}
+.i {
+  &-logo {
+    @include mask("Logo.svg");
+  }
+  @each $item in $iconsList {
+    &-#{$item} {
+      @include mask('icons/#{$item}.svg');
+      width: 20rem;
+      height: 20rem;
+
+      &:not([class*="bgc-"]) {
+        background-color: var(--gray7);
+      }
+    }
+  }
+  &-home {
+    width: 16rem;
+    height: 13rem;
+  }
+  &-right,
+  &-left {
+    width: 6rem;
+    height: 10rem;
+  }
+  &-arrow-down {
+    width: 10rem;
+    height: 5rem;
+  }
+  &-first-page,
+  &-last-page {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+.test {
+  border: 1px solid red;
+}

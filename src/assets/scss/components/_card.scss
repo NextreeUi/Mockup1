@@ -1,0 +1,66 @@
+.card {
+  &2 {
+    &-wrap {
+      width: 100%;
+      border-radius: 10rem;
+      border: 1px solid var(--grayc);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      &:hover .card2-hover {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    &-hover{
+      background-color: rgb(var(--set-primary), 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10rem;
+      padding: 20rem 30rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s;
+    }
+  }
+  &6 {
+    &-list {
+      list-style:disc !important;
+      font-size: 14rem;
+      display: flex;
+      flex-direction: column;
+      gap: 20rem;
+      margin-left: 20rem;
+      &>li>p {
+        color: var(--gray6);
+      }
+    }
+  }
+  //slide
+  &-slide {
+    display: flex;
+    gap: 20rem;
+    width: calc(300% + 40rem);
+    margin-left: 0;
+    transition: 0.3s;
+    &-wrap {
+      width: 1110rem;
+      overflow: hidden;
+    }
+    &.s1 {
+      margin-left: 0;
+    }
+    &.s2 {
+      margin-left: calc(-100% - 20rem);
+    }
+    &.s3 {
+      margin-left: calc(-200% - 30rem);
+    }
+  }
+}

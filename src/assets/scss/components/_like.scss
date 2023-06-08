@@ -1,0 +1,74 @@
+@mixin like {
+    width: 44rem;
+    height: 44rem;
+    border-radius: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+        content: '';
+        background-color: rgb(var(--set-primary), 0.3);
+        position: absolute;
+        border-radius: 100%;
+        width: 70rem;
+        height: 70rem;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    &:active::before {
+        opacity: 1;
+        width: 44rem;
+        height: 44rem;
+        transition: 0s;
+    }
+    &::after {
+        content: '';
+        @include mask('icons/heart.svg');
+        background-color: var(--grayc);
+        width: 20rem;
+        height: 18rem;
+        transition: 0.3s;
+        &:active {
+            size: 120%;
+        }
+    }
+    &:checked {
+        &::after {
+            background-color: var(--primary)
+        }
+    }
+}
+
+input[type='checkbox'].like {
+    @include noMask;
+    @include like;
+    background-color: var(--white);
+    &-outlined {
+        @include noMask;
+        @include like;
+        background-color: transparent;
+        border: 1px solid var(--gray9);
+        &::after {
+            @include mask('icons/heart-outline.svg');
+            background-color: var(--gray9);
+        }
+        &:checked {
+            border: 1px solid var(--primary);
+            &::after {
+                @include mask('icons/heart.svg');
+                background-color: var(--primary);
+            }
+        }
+    }
+    &-contained {
+        @include noMask;
+        @include like;
+        background-color: var(--wthie);
+        border: 1px solid var(--gray9);
+        &:checked {
+            border: 1px solid var(--primary);
+        }
+    }
+    
+}
+

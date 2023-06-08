@@ -1,0 +1,33 @@
+.slide {
+  &-mainBanner {
+    &-nav {
+      width: 20rem ; 
+      height: 20rem ;
+      background-color: rgb(var(--set-black), 0.3) ;
+      border-radius: 10rem;
+      &.select {
+        background-color: transparent;
+        border: 2px solid rgb(var(--set-black), 0.3);
+      }
+      &-wrap {
+        bottom: 50rem;
+      }
+    }
+  }
+  &-subBanner {
+    &-nav {
+      width: 20rem ; 
+      height: 20rem ;
+      background-color: var(--white);
+      border-radius: 10rem;
+      &.select {
+        background-color: transparent;
+        border: 2px solid var(--white);
+      }
+      &-wrap {
+        width: 1400rem;
+        bottom: 45rem;
+      }
+    }
+  }
+}

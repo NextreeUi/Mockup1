@@ -1,0 +1,25 @@
+.tab {
+  &-round {
+    width: 1110rem;
+    gap: 30rem;
+    &>div:nth-child(1) {
+      flex-grow: 1;
+      gap: 20rem;
+      &>div {
+        width: 100%;
+        &>button {
+          width: 100%;
+          border-radius: 100rem !important;
+          background-color: var(--graye) !important;
+          color: var(--garye) !important;
+          &.select {
+            font-weight: bold;
+            background-color: var(--white) !important;
+            border: 1px solid var(--primary);
+            color: var(--primary) !important;
+          }
+        }
+      }
+    }
+  }
+}
