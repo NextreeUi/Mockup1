@@ -301,7 +301,7 @@ const SubBanner = () => {
   return (
     <>
       <Slide
-        classSlide='h317 vw100-4'
+        classSlide='h317 lnb-width'
         classNav='slide-subBanner-nav'
         classNavWrap='slide-subBanner-nav-wrap'
         playIcon={<i className='flex bgc-white i-play w30 h30'/>}
@@ -499,7 +499,7 @@ const TopBtnSection = () => {
     </section>
   )
 }
-const MainGnb = () => {
+const MainLnb = () => {
   return (
     <>
     <div className="flexColumn gap70">
@@ -519,4 +519,4 @@ const MainGnb = () => {
 }
 
 
-export default MainGnb;
+export default MainLnb;

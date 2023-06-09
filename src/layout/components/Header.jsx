@@ -372,8 +372,8 @@ function Header() {
           {/* header right */}
           <div className="header-content-right">
             <div className="flex w300 alignCenter mr20">
-              <TextField radius="round" className="width100 pr40" placeholder="Search by Keyword"/>
-              <Button size='small' radius="round" square className="ml-40">
+              <TextField radius="round" className="width100 pr32" placeholder="Search by Keyword"/>
+              <Button theme="white" size='small' radius="round" square className="ml-32">
                 <p className="i-magnifier w20 h20 bgc-gray6" />
               </Button>
             </div>

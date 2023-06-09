@@ -13,4 +13,5 @@ export default defineConfig({
     devSourcemap: true,
   },
   plugins: [react()],
+  base: "/Mockup1/",
 })

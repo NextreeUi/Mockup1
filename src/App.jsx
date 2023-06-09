@@ -3,6 +3,7 @@ import { HashRouter, Route, Link, Routes } from "react-router-dom";
 
 // layout
 import DefaultLayout from "@/layout/DefaultLayout";
+import DefaultLayoutLnb from "@/layout/DefaultLayoutLnb";
 import GuideLayout from "@/layout/GuideLayout";
 import NoLayout from "@/layout/NoLayout";
 
@@ -51,7 +52,7 @@ const Home = () => {
               <Link to='/DefaultLayout/Main/MainGnb'>🔗 Main page (Gnb)</Link>
             </dd>
             <dd>
-              <Link to='/DefaultLayout/Main/MainLnb'>🔗 Main page (Lnb)</Link>
+              <Link to='/DefaultLayoutLnb/Main/MainLnb'>🔗 Main page (Lnb)</Link>
             </dd>
           </dl>
         </div>
@@ -74,6 +75,7 @@ const App = () => {
         <Routes>
           <Route path='/*' element={<Home/>} />
           <Route path='/DefaultLayout/*' element={<DefaultLayout />} />
+          <Route path='/DefaultLayoutLnb/*' element={<DefaultLayoutLnb />} />
           <Route path='/GuideLayout/*' element={<GuideLayout />} />
           <Route path='/NoLayout/*' element={<NoLayout />} />
         </Routes>
