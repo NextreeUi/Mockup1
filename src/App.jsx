@@ -55,6 +55,15 @@ const Home = () => {
               <Link to='/DefaultLayoutLnb/Main/MainLnb'>🔗 Main page (Lnb)</Link>
             </dd>
           </dl>
+          <dl>
+            <dt> Sub</dt>
+            <dd>
+              <Link to='/DefaultLayout/Sub/BoardList'>🔗 Board List</Link>
+            </dd>
+            <dd>
+              <Link to='/DefaultLayout/Sub/BoardView'>🔗 Board View</Link>
+            </dd>
+          </dl>
         </div>
 
         <div className='guide-bg'>

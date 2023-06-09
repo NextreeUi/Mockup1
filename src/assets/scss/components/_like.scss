@@ -69,6 +69,44 @@ input[type='checkbox'].like {
             border: 1px solid var(--primary);
         }
     }
-    
 }
 
+input[type='checkbox'].like2 {
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before {
+        content: '';
+        background-color: rgb(var(--set-primary), 0.3);
+        position: absolute;
+        border-radius: 100%;
+        width: 30rem;
+        height: 30rem;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    &:active::before {
+        opacity: 1;
+        width: 16rem;
+        height: 16rem;
+        transition: 0s;
+    }
+    &::after {
+        content: '';
+        @include mask('icons/thumb-up.svg');
+        background-color: var(--grayc);
+        width: 16rem;
+        height: 16rem;
+        transition: 0.3s;
+        &:active {
+            size: 120%;
+        }
+    }
+    &:checked {
+        &::after {
+            background-color: var(--primary)
+        }
+    }
+}

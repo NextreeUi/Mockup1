@@ -28,7 +28,18 @@ body {
 }
 
 :root {
-  --radius: 3rem;
   --content-width: 1400rem;
   --lnb-contents-width: calc(100vw - 264rem);
+  
+  //radius
+    --radius: 3rem !important;
+  // location
+    --location-gap : 15rem !important;
+    // --location-font-size: 12rem;
+    // --location-light: var(--gray9);
+    // --location-light-hover: var(--gray6);
+    --location-bold: var(--gray3) !important;
+
+  //select
+    --select-width: 100% !important;
 }

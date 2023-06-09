@@ -22,4 +22,28 @@
       }
     }
   }
+  &-line {
+    &>div {
+      width: 100%;
+      &>div {
+        width: 100%;
+        &>button {
+          width: 100%;
+          border-bottom: 1px solid var(--primary) !important;
+          &.select {
+            background-color: white;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-bottom: 1px solid var(--white) !important;
+            &:hover {
+              background-color: rgb(var(--set-primary), 0.1) ;
+            }
+            &::before {
+              background-color: rgb(var(--set-primary), 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
 }
