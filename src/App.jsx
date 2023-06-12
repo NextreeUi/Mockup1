@@ -4,6 +4,7 @@ import { HashRouter, Route, Link, Routes } from "react-router-dom";
 // layout
 import DefaultLayout from "@/layout/DefaultLayout";
 import DefaultLayoutLnb from "@/layout/DefaultLayoutLnb";
+import InfoLayout from "@/layout/InfoLayout";
 import GuideLayout from "@/layout/GuideLayout";
 import NoLayout from "@/layout/NoLayout";
 
@@ -63,6 +64,27 @@ const Home = () => {
             <dd>
               <Link to='/DefaultLayout/Sub/BoardView'>🔗 Board View</Link>
             </dd>
+            <dd>
+              <Link to='/DefaultLayout/Sub/Tree'>🔗 Tree</Link>
+            </dd>
+            <dd>
+              <Link to='/DefaultLayout/Sub/FAQ'>🔗 FAQ</Link>
+            </dd>
+            <dd>
+              <Link to='/DefaultLayout/Sub/CardUI'>🔗 CardUI</Link>
+            </dd>
+            <dd>
+              <Link to='/InfoLayout/Sub/Privacy'>🔗 Privacy </Link>
+            </dd>
+            <dd>
+              <Link to='/NoLayout/Sub/ErrorPage'>🔗 Error Page </Link>
+            </dd>
+            <dd>
+              <Link to='/NoLayout/Sub/MailForm'>🔗 Mail Form </Link>
+            </dd>
+            <dd>
+              <Link to='/NoLayout/Sub/MailFormCode'>🔗 Mail Form - Variation Code </Link>
+            </dd>
           </dl>
         </div>
 
@@ -85,6 +107,7 @@ const App = () => {
           <Route path='/*' element={<Home/>} />
           <Route path='/DefaultLayout/*' element={<DefaultLayout />} />
           <Route path='/DefaultLayoutLnb/*' element={<DefaultLayoutLnb />} />
+          <Route path='/InfoLayout/*' element={<InfoLayout />} />
           <Route path='/GuideLayout/*' element={<GuideLayout />} />
           <Route path='/NoLayout/*' element={<NoLayout />} />
         </Routes>

@@ -27,8 +27,13 @@ body {
   width: var(--content-width);
 }
 
+.infoWidth {
+  width: var(--info-width);
+}
+
 :root {
   --content-width: 1400rem;
+  --info-width: 1200rem;
   --lnb-contents-width: calc(100vw - 264rem);
   
   //radius
@@ -42,4 +47,7 @@ body {
 
   //select
     --select-width: 100% !important;
+
+  //tree
+    --tree-hover: rgb(var(--set-primary), 0.1) !important;
 }

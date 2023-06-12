@@ -184,7 +184,7 @@ const BoardList = () => {
   }
   return (
     <>
-    <div className="contentWidth flexColumn mt30">
+    <div className="contentWidth flexColumn mt30 mb175">
       <Title title='Title'/>
       <Tab 
         classTabWrap='tab-line mt30'

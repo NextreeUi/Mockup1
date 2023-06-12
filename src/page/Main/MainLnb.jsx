@@ -292,7 +292,7 @@ const SubBanner = () => {
                 Button
               </Button>
             </div>
-            <i className="i-logo w232 h232 bgc-white_80p absolute r0"/>
+            <i className="i-logo w232 h232 bgc-white_80p absolute ar0"/>
           </div>
         </div>
       </>
@@ -491,7 +491,7 @@ const TopBtnSection = () => {
   return (
     <section>
       <div className="section-content relative">
-        <Button onClick={TopClick} variant="outlined" theme="grayc" radius="round" className="absolute t10 r0 maxw40 minh60 flexColumn gap5">
+        <Button onClick={TopClick} variant="outlined" theme="grayc" radius="round" className="absolute ab100 ar0 maxw40 minh60 flexColumn gap5">
           <p className="i-left bgc-gray6" style={{transform: 'rotate(90deg)'}}/>
           <p className="size11 txt-gray6">TOP</p>
         </Button>
@@ -502,7 +502,7 @@ const TopBtnSection = () => {
 const MainLnb = () => {
   return (
     <>
-    <div className="flexColumn gap70">
+    <div className="flexColumn gap70 mb175">
       <MainBanner />
       <Section1 />
       <Section2 />

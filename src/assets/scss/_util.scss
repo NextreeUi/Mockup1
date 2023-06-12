@@ -1,15 +1,3 @@
-@for $i from 1 to 11 {
-  .ellipsis#{$i} {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-       -webkit-line-clamp: #{$i};
-       -webkit-box-orient: vertical;
-  }
-}
-
-// 반복문 다 1씩 더하기
-
 .scroll-padding {
   &::-webkit-scrollbar-track {
     border: 0;
@@ -26,9 +14,23 @@
     background-clip: padding-box !important; 
   }
 }
-
-@for $i from 1 to 31 {
-  .transition#{$i} {
-      transition: calc(#{$i} * 0.1s);
+.scroll-padding25 {
+  &::-webkit-scrollbar-track {
+    border: 0;
+    border-radius: 0;
   }
+  &::-webkit-scrollbar {
+    width: 25px;
+    
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    border: 10px solid transparent;
+    background-clip: padding-box !important; 
+  }
+}
+
+.alignBetween {
+  justify-content: space-between;
 }

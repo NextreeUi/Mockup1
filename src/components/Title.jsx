@@ -21,8 +21,15 @@ function Title(props) {
         />
         <div className="flex alignEnd gap10">
           <p className="size32">{props.title}</p>
-          <div className="w1 h17 bgc-grayc"/>
-          <p className="size14 txt-gray9">Lorem ipsum dolor sit amet</p>
+          {
+            props.onlyTitle ?
+            <></>
+            :
+            <>
+              <div className="w1 h17 bgc-grayc"/>
+              <p className="size14 txt-gray9">Lorem ipsum dolor sit amet</p>
+            </>
+          }
         </div>
       </div>
     </>
