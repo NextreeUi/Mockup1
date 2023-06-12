@@ -25,7 +25,7 @@ const Lnb = () => {
         <div className={`${LnbState ? '' : 'w40'}`}>
           <Logo noText={!LnbState}/>
         </div>
-        <div className={`r-10 absolute overHidden flex justifyEnd ${LnbState ? 'w20' : 'w10'}`}>
+        <div className={`ar-10 absolute overHidden flex justifyEnd ${LnbState ? 'w20' : 'w10'}`}>
           <Button onClick={ExtendClick} square className='maxw20 minw20 h20' variant="contained" radius="round">
             <i className={`i-lnb-arrow w5 h8 lnb-extend-icon ${LnbState ? 'open mr2' : 'ml8'}`}/>
           </Button>
@@ -47,7 +47,7 @@ const Lnb = () => {
             </Button>
             {
               SearchState ?
-              <div className="flex alignCenter absolute t3 l50">
+              <div className="flex alignCenter absolute at3 al50">
                 <TextField radius="round" className="lnb-textfield w300  pr32" placeholder="Search by Keyword"/>
                 <Button onClick={SearchClick} theme="white" size='small' radius="round" square className="ml-32">
                   <p className="i-magnifier w20 h20 bgc-gray6" />
@@ -152,7 +152,7 @@ const Lnb = () => {
       {
         LnbState ?
         <>
-        <div className="width100 p20 h80 absolute flexBetween b0 otlt-grayc">
+        <div className="width100 p20 h80 absolute flexBetween ab0 otlt-grayc">
           <div className="flex gap10 alignCenter">
             <Avatar name='lorem' color='primary'/>  
             <div className="flexColumn size12 gap5">
@@ -166,7 +166,7 @@ const Lnb = () => {
         </div>
         </>
         :
-        <div className="width100 p20 h80 absolute flexBetween b0 otlt-grayc">
+        <div className="width100 p20 h80 absolute flexBetween ab0 otlt-grayc">
           <Button className='minw40 maxw40 h40' square theme='gray6'>
             <i className='i-logout'/>
           </Button>
