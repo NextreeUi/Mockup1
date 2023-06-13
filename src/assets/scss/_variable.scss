@@ -6,21 +6,47 @@ body {
 }
 
 // responsive
+@media (min-width: 1401px) {
+  html {
+    font-size: 1px !important
+  }
+}
 @media (max-width: 1400px) {
   html {
-    font-size: 1px
+    font-size: 1px !important
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 1px !important
   }
 }
 @media (max-width: 600px) {
   html {
-    font-size: 1px
+    font-size: 0.9px !important
   }
 }
-@media (min-width: 1401px) {
+@media (max-width: 500px) {
   html {
-    font-size: 1px
+    font-size: 0.8px !important
   }
 }
+@media (max-width: 400px) {
+  html {
+    font-size: 0.7px !important
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 0.6px !important
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 0.5px !important
+  }
+}
+
 
 // contents
 .contentWidth {
