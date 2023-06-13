@@ -146,6 +146,30 @@
         }
     }
 
+    &-mobile {
+        &-search {
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            gap: 20rem;
+            width: 100%;
+            padding: 20rem 30rem;
+            background-color: var(--white);
+            border-bottom: 1px solid var(--grayc-100);
+            z-index: 999;
+        }
+        &-menu {
+            position: fixed;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+            z-index: 999;
+        }
+    }
     &-btn {
         width: 60rem;
         min-height: 80rem;

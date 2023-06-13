@@ -7,8 +7,8 @@ function Card6(props) {
   return (
     <>
       <div className="flex gap30 height100">
-        <div className="w235 height100 bgc-graye"/>
-        <div className="flexColumn flex1">
+        <div className="width100 height100 bgc-graye"/>
+        <div className="flexColumn width100">
           <div className="flex1 flexColumn gap20 height100">
             <p className="size20">Lorem ipsum dolor sit amet,</p>
             <ul className="card6-list">

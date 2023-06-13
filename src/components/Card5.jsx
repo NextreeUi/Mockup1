@@ -4,7 +4,7 @@ function Card5(props) {
   return (
     <>
       <div className="flex gap20 alignCenter cursor">
-        <div className="h100 w170 bgc-graye r10" />
+        <div className="h100 w170 bgc-graye r10 " />
         <div className="flexColumn gap20">
           <div className="flexColumn">
             <p className="size12 txt-gray6">[Lorem]</p>

@@ -6,17 +6,17 @@ body {
 }
 
 // responsive
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   html {
-    font-size: 0.95px
+    font-size: 1px
   }
 }
 @media (max-width: 600px) {
   html {
-    font-size: 0.9px
+    font-size: 1px
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1401px) {
   html {
     font-size: 1px
   }
@@ -32,7 +32,15 @@ body {
 }
 
 :root {
-  --content-width: 1400rem;
+  @media (min-width: 1401px) {
+    --content-width: 1400rem;
+  }
+  @media (max-width: 1400px) {
+    --content-width: 800rem;
+  }
+  @media (max-width: 800px) {
+    --content-width: calc(100vw - 60px);
+  }
   --info-width: 1200rem;
   --lnb-contents-width: calc(100vw - 264rem);
   
