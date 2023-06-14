@@ -22,7 +22,7 @@ const MainBanner = ({lnbOpen}) => {
                   <p className="b txt-primary">Lorem</p>
                   <p>Lorem ipsum dolor</p>
                 </div>
-                <p className="size32 b txt-black">{props.number} Lorem ipsum dolor sit amet consectetur</p>
+                <p className="size32 txtCenter b txt-black">{props.number} Lorem ipsum dolor sit amet consectetur</p>
                 <p className="size24 txt-black">adipiscing (ELIT)</p>
               </div>
               <div className="flex gap10">
