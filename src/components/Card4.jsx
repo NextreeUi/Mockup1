@@ -6,7 +6,7 @@ import { Button, Checkbox, Hidden } from 'nds-ui/component';
 function Card4(props) {
   return (
     <>
-      <Hidden min={801}>
+      <Hidden min={1401}>
         <div className="px20 py15 cursor hover-bgc-primary_10p transition3 width100 height100 flexColumn gap10">
           <div className="r10 bgc-grayc-100 width100 height100" />
           <div className="flexColumn gap2">
@@ -24,7 +24,7 @@ function Card4(props) {
           </div>
         </div>
       </Hidden>
-      <Hidden max={800} className='px20 py15 cursor hover-bgc-primary_10p transition3 width100 height100 flex gap20'>
+      <Hidden max={1400} className='px20 py15 cursor hover-bgc-primary_10p transition3 width100 height100 flex gap20'>
         <div className="r10 bgc-grayc-100 width100 height100" />
         <div className="flexColumn width100 gap10">
           <div className="flexColumn gap2">

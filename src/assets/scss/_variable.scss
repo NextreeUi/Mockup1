@@ -23,27 +23,27 @@ body {
 }
 @media (max-width: 600px) {
   html {
-    font-size: 0.9px !important
+    font-size: 0.95px !important
   }
 }
 @media (max-width: 500px) {
   html {
-    font-size: 0.8px !important
+    font-size: 0.9px !important
   }
 }
 @media (max-width: 400px) {
   html {
-    font-size: 0.7px !important
+    font-size: 0.85px !important
   }
 }
 @media (max-width: 350px) {
   html {
-    font-size: 0.6px !important
+    font-size: 0.8px !important
   }
 }
 @media (max-width: 300px) {
   html {
-    font-size: 0.5px !important
+    font-size: 0.75px !important
   }
 }
 
@@ -56,7 +56,9 @@ body {
 .infoWidth {
   width: var(--info-width);
 }
-
+.lnbContentWidth{
+  width: var(--lnb-contents-width);
+}
 :root {
   @media (min-width: 1401px) {
     --content-width: 1400rem;

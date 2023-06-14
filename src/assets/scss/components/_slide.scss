@@ -27,9 +27,6 @@
       &-wrap {
         width: var(--content-width);
         bottom: 45rem;
-        @media (max-width: 800px) {
-          bottom: 70rem;
-        }
       }
     }
   }

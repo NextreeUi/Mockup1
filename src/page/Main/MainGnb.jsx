@@ -293,9 +293,120 @@ const Section2 = () => {
   const [cardSlideNumber, setCardSlideNumber] = React.useState(1);
 
   return (
-    <section className="section2">
-      <div className="section-content flexColumn gap15">
-        <Hidden max={1400}>
+    <>
+    <Hidden min={801}>
+      <section className="section2">
+        <div className="section-content flexColumn gap15">
+          <Hidden max={1400}>
+            <div className="flexColumn gap5">
+              <div className="flex gap4 size16 txt-gray3">
+                <p className="txt-gray6">Mr.</p>
+                <p>Lorem</p>
+              </div>
+              <div className="size24 txt-black flexBetween">
+                Lorem ipsum dolor sit amet, consectetur 
+                <div className="flex gap20">
+                  <Button 
+                    size="extraSmall"
+                    radius="round"
+                    square
+                    theme="white"
+                    onClick={()=>{
+                      if(cardSlideNumber > 1) {
+                        setCardSlideNumber(cardSlideNumber - 1)
+                      }
+                    }}  
+                  >
+                    <p className="i-left-thin w24 h24 bgc-gray6" />
+                  </Button>
+                  <Button 
+                    size="extraSmall"
+                    radius="round"
+                    square
+                    theme="white"
+                    onClick={()=>{
+                      if(cardSlideNumber < 3) {
+                        setCardSlideNumber(cardSlideNumber + 1)
+                      }
+                    }}  
+                  >
+                    <p className="i-right-thin w24 h24 bgc-gray6" />
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </Hidden>
+          <Hidden min={1401} className="justifyEnd">
+            <div className="flex gap20">
+              <Button 
+                size="extraSmall"
+                radius="round"
+                square
+                theme="white"
+                onClick={()=>{
+                  if(cardSlideNumber > 1) {
+                    setCardSlideNumber(cardSlideNumber - 1)
+                  }
+                }}  
+              >
+                <p className="i-left-thin w24 h24 bgc-gray6" />
+              </Button>
+              <Button 
+                size="extraSmall"
+                radius="round"
+                square
+                theme="white"
+                onClick={()=>{
+                  if(cardSlideNumber < 3) {
+                    setCardSlideNumber(cardSlideNumber + 1)
+                  }
+                }}  
+              >
+                <p className="i-right-thin w24 h24 bgc-gray6" />
+              </Button>
+            </div>
+          </Hidden>
+          <div className="flex gap70">
+            <Hidden min={1400}>
+              <div className="w220 flexColumn gap5">
+                <div className="flex gap4 size16 txt-gray3">
+                  <p className="txt-gray6">Mr.</p>
+                  <p>Lorem</p>
+                </div>
+                <p className="size24 txt-black">
+                Lorem ipsum dolor sit amet, consectetur 
+                </p>
+              </div>
+            </Hidden>
+            <div className="card-slide-wrap">
+              <div 
+                className={`card-slide ${
+                  cardSlideNumber == 1 ? 's1' :
+                  cardSlideNumber == 2 ? 's2' :
+                  cardSlideNumber == 3 ? 's3' : ''
+                }`}
+              >
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 no/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Hidden>
+    <Hidden max={800}>
+      <section className="section2">
+        <div className="section-content flexColumn gap15">
           <div className="flexColumn gap5">
             <div className="flex gap4 size16 txt-gray3">
               <p className="txt-gray6">Mr.</p>
@@ -333,41 +444,31 @@ const Section2 = () => {
               </div>
             </div>
           </div>
-        </Hidden>
-        <div className="justifyEnd">
-          
-        </div>
-        <div className="flex gap70">
-          <Hidden min={1400}>
-            <div className="w220 flexColumn gap5">
-              <div className="flex gap4 size16 txt-gray3">
-                <p className="txt-gray6">Mr.</p>
-                <p>Lorem</p>
+          <div className="justifyEnd">
+            
+          </div>
+          <div className="flex gap70">
+            <div className="card-slide-wrap">
+              <div 
+                className={`card-slide ${
+                  cardSlideNumber == 1 ? 's1' :
+                  cardSlideNumber == 2 ? 's2' :
+                  cardSlideNumber == 3 ? 's3' : ''
+                }`}
+              >
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 title='Lorem Ipsum dolor'/>
+                <Card2 no/>
               </div>
-              <p className="size24 txt-black">
-              Lorem ipsum dolor sit amet, consectetur 
-              </p>
-            </div>
-          </Hidden>
-          <div className="card-slide-wrap">
-            <div 
-              className={`card-slide ${
-                cardSlideNumber == 1 ? 's1' :
-                cardSlideNumber == 2 ? 's2' :
-                cardSlideNumber == 3 ? 's3' : ''
-              }`}
-            >
-              <Card2 title='Lorem Ipsum dolor'/>
-              <Card2 title='Lorem Ipsum dolor'/>
-              <Card2 title='Lorem Ipsum dolor'/>
-              <Card2 title='Lorem Ipsum dolor'/>
-              <Card2 title='Lorem Ipsum dolor'/>
-              <Card2 no/>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Hidden>
+    </>
   )
 }
 

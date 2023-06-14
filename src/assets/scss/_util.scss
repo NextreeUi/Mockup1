@@ -34,3 +34,11 @@
 .alignBetween {
   justify-content: space-between;
 }
+
+.ellipsis1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100px;
+  display: block;
+}

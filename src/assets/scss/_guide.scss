@@ -95,5 +95,8 @@
         z-index: -1;
         opacity: 0.3;
         filter: blur(2px);
+        @media (max-width: 801px) {
+            left: 10% !important;
+        }
     }
 }
